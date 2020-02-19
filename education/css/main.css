@@ -1979,6 +1979,9 @@ body.mobile-nav-active #mobile-nav-toggle {
 .section-gap-2{
     padding: 60px 0;
 }
+.section-gap-3{
+    padding: 40px 0;
+}
 .alert-msg {
 	color: #008000
 }
@@ -2077,6 +2080,16 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 }
 
+.tint {
+z-index: 1;
+height: 100%;
+width: 100%;
+position: absolute;
+top: 0px;
+left: 0px;
+background: rgba(0, 0, 0, 0.7);    
+}
+
 .section-title {
 	text-align: center;
 	display: block;
@@ -2090,9 +2103,10 @@ body.mobile-nav-active #mobile-nav-toggle {
 @media (min-width: 910px) {
 .banner-area {
 	/*background: url(../img/banner-bg.jpg) right;*/
-	/*background: url("../img/Png for AMity/PC.jpg") center;*/
-	background: url("../img/Png for AMity/PC.jpg");
+	background: url("../img/Png for AMity/PC.jpg") center;
+	/*background: linear-gradient(0deg, rgba(71,69,103,1) 0%, rgba(168,168,179,1) 51%, rgba(255,255,255,1) 100%),url("../img/Png for AMity/PC.jpg");*/
 	/*background-size: cover*/
+    /*background-image: linear-gradient(0deg, rgba(0,255,0,0.4), rgba(255,0,0,0.2)), url(https://upload.wikimedia.org/wikipedia/commons/4/41/Sol454_Marte_spirit.jpg);*/
 	background-size: cover;
     min-height: 1200px;
 }
@@ -2102,6 +2116,8 @@ body.mobile-nav-active #mobile-nav-toggle {
 	/*background: url(../img/banner-bg.jpg) right;*/
 	/*background: url("../img/Png for AMity/PC.jpg") center;*/
 	background: url("../img/Mobile/Mobile Banner.jpg") center;
+    /*background-image: linear-gradient(0deg, rgba(71,69,103,1) 0%, rgba(168,168,179,1) 51%, rgba(255,255,255,1) 100%), url(https://i.imgur.com/uzaL2X1g.jpg);
+   background-image: linear-gradient(0deg, rgba(0,255,0,0.4), rgba(255,0,0,0.2)), url(https://upload.wikimedia.org/wikipedia/commons/4/41/Sol454_Marte_spirit.jpg);*/
 	/*background-size: cover*/
 	background-size: cover;
     /*min-height: 1200px;*/
@@ -2294,7 +2310,7 @@ padding-top: 0px;
 }
 @media (max-width: 576px) {
 	.single-popular-carusel {
-		margin: 15px
+		/*-margin: 15px*/
 	}
 }
 .single-popular-carusel:hover .thumb img {
@@ -2600,7 +2616,7 @@ padding-top: 0px;
 	/*background: #f7631b;*/
 	background: #09164d;
 	/*padding: 90px 0px*/
-	padding: 40px 0px
+	padding: 15px 0px
 }
 .cta-two-area .cta-left {
 	text-align: left
@@ -3091,7 +3107,7 @@ dl.toggle.time-line:before {
 	}
 }
 .left-contents .comments-area .thumb {
-	margin-right: 20px
+	margin-right: 20px;
 }
 .left-contents .comments-area .desc h5 {
 	font-weight: 600;
@@ -3829,7 +3845,7 @@ dl.toggle.time-line:before {
 	text-align: left
 }
 .single-post-area .navigation-area .nav-left .thumb {
-	margin-right: 20px;
+	/*margin-right: 20px;*/
 	background: #000
 }
 .single-post-area .navigation-area .nav-left .thumb img {
@@ -4192,7 +4208,8 @@ dl.toggle.time-line:before {
 }
 @media (max-width: 991.98px) {
 	.single-footer-widget {
-		margin-bottom: 30px
+		margin-bottom: 10px
+		/*margin-bottom: 30px*/
 	}
 }
 .footer-bottom {
@@ -4555,4 +4572,26 @@ border-left: 1px solid #09164d;
 
 .questions {
   display: none;
+}
+.studiv {
+    background: url("https://wp-media.petersons.com/blog/wp-content/uploads/2019/06/13104106/iStock-914314318.jpg") center no-repeat;
+	background-size: cover;
+    height: 375px;
+    width: 100%;
+}
+.studiv-2 {
+    background: url("https://delhiitesmagazine.com/wp-content/uploads/2017/07/iStock_87827713_LARGE_9.02.01_AM-1024x640.jpg") center no-repeat;
+	background-size: cover;
+    height: 375px;
+    width: 100%;
+}
+.studiv-3 {
+    background: url("https://wp-media.petersons.com/blog/wp-content/uploads/2019/06/13104106/iStock-914314318.jpg") center no-repeat;
+	background-size: cover;
+    height: 375px;
+    width: 100%;
+}
+
+.shadow {
+  background: linear-gradient(0deg, rgba(71,69,103,0.6138655291218049) 0%, rgba(168,168,179,0.3757702910265669) 51%, rgba(255,255,255,0) 100%);
 }
