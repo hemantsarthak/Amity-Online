@@ -2615,8 +2615,9 @@ padding-top: 0px;
 .cta-two-area {
 	/*background: #f7631b;*/
 	background: #09164d;
-	/*padding: 90px 0px*/
-	padding: 15px 0px
+	/*padding: 90px 0px
+	padding: 15px 0px*/
+	padding: 25px 0px
 }
 .cta-two-area .cta-left {
 	text-align: left
@@ -4254,6 +4255,7 @@ dl.toggle.time-line:before {
   width: 15%;
   position: relative;
   bottom: -6px;
+	margin: auto;
 }
 
 .blog-area {
@@ -4422,7 +4424,9 @@ min-height: 400px;
 /* CSS Reset used: http://seodesigns.com/projects/codepen/reset.css */
 .sticky-footer {
   display: block;
-  height: 30px;
+  /*height: 30px;*/
+  /*height: 40px;*/
+  height: 43px;
   /*background: #006848;
   background: #ffcb00;*/
   background: #f0c10a;
@@ -4452,7 +4456,9 @@ min-height: 400px;
 }
 .sticky-footer .one-fourth p {
   font-size: 10px;
-  margin-top: 3px;
+  /*margin-top: 3px;
+  margin-top: 8px;*/
+  margin-top: 10px;
 }
 
 /*.navbar-form {*/
@@ -4595,3 +4601,77 @@ border-left: 1px solid #09164d;
 .shadow {
   background: linear-gradient(0deg, rgba(71,69,103,0.6138655291218049) 0%, rgba(168,168,179,0.3757702910265669) 51%, rgba(255,255,255,0) 100%);
 }
+
+
+.cards-list {
+  z-index: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.card {
+ /* margin: 30px auto;*/
+  margin: 10px auto;
+  /*width: 300px;*/
+  /*height: 300px;*/
+  width: 170px;
+  height: 80px;
+  border-radius: 10px;
+ /* box-shadow: 5px 5px 30px 7px rgba(0,0,0,0.25), -5px -5px 30px 7px rgba(0,0,0,0.22);*/
+	-webkit-box-shadow: 0px 3px 9px -1px rgba(222,219,222,1);
+-moz-box-shadow: 0px 3px 9px -1px rgba(222,219,222,1);
+box-shadow: 0px 3px 9px -1px rgba(222,219,222,1);
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.card .card_image {
+  width: inherit;
+  height: inherit;
+ /* border-radius: 20px;*/
+}
+
+.card .card_image img {
+  width: 92%;
+  /*width: inherit;
+  height: inherit;*/
+  height: 95%;
+  /*border-radius: 20px;*/
+  object-fit: contain;
+}
+
+.card .card_title {
+  text-align: center;
+  border-radius: 0px 0px 40px 40px;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 30px;
+  margin-top: -80px;
+  height: 40px;
+}
+
+/*
+.card:hover {
+  transform: scale(0.9, 0.9);
+  box-shadow: 5px 5px 30px 15px rgba(0,0,0,0.25), 
+    -5px -5px 30px 15px rgba(0,0,0,0.22);
+}
+
+.title-white {
+  color: white;
+}
+
+.title-black {
+  color: black;
+}*/
+
+@media all and (max-width: 500px) {
+  .card-list {
+    /* On small screens, we are no longer using row direction but column */
+    flex-direction: column;
+  }
+}
+
+
